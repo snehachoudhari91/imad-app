@@ -5,17 +5,17 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var articles={
-  var  articleone:{
+  articleone:{
     title:"article one",
     heading:"article one",
     content:"this is the article one"
 },
-var  articletwo:{
+ articletwo:{
     title:"article two",
     heading:"article two",
     content:"this is the article two"
 },
-var  articlethree:{
+  articlethree:{
     title:"article three",
     heading:"article three",
     content:"this is the article three"
