@@ -16,7 +16,7 @@ var articles={
     heading:"article three",
     content:"this is the article three"
 } 
-}
+};
 
 function createtemplate(data)
 {
