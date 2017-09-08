@@ -10,6 +10,16 @@ var  articleone={
     heading:"article one",
     content:"this is the article one"
 };
+var  articletwo={
+    title:"article two",
+    heading:"article two",
+    content:"this is the article two"
+};
+var  articlethree={
+    title:"article three",
+    heading:"article three",
+    content:"this is the article three"
+};
 function createtemplate(data)
 {
     var title=data.title;
@@ -54,10 +64,10 @@ app.get('/article-one', function (req, res) {
 res.send(createtemplate(articleone));
 });
 app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+  res.send(createtemplate(articletwo));
 });
 app.get('/article-three', function (req, res) {
-res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+res.send(createtemplate(articlethree));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
