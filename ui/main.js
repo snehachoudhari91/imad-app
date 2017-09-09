@@ -1,12 +1,26 @@
 var button=document.getElementById("counter");
-var counter=0;
+
 button.onclick=function()
 {
+    var request=new XMLhttpRequest();
     
-    
-    counter=counter+1;
-    var spam=document.getElementById("count");
+    request.onreadyStateChange=function()
+    {
+        if(request.readyState==XMLhttpRequest.DONE)
+        {
+            
+            if(reuest.status==200)
+            {
+                
+                var counter=request.responseText;
+                 var spam=document.getElementById("count");
     spam.innerHTML=counter.toString();
+            }
+        }
+    };
+    
+
+   
     
     
-}
+};
