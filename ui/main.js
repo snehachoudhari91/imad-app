@@ -1,4 +1,5 @@
 var button=document.getElementById("counter");
+spam.innerHTML=counter.toString();
 
 button.onclick=function()
 {
