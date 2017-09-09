@@ -1,5 +1,5 @@
 var button=document.getElementById("counter");
-spam.innerHTML=counter.toString();
+
 
 button.onclick=function()
 {
@@ -14,7 +14,7 @@ button.onclick=function()
         {
             //take the action
             
-            if(reuest.status==200)
+            if(request.status==200)
             {
                 
                 var counter=request.responseText;
